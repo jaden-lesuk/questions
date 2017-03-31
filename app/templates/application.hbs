@@ -1,5 +1,30 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<div class="container-fluid">
+  <nav role="navigation" class="navbar">
+    <button class="btn-success btn">
+      {{#link-to 'index'}}
+        Home
+      {{/link-to}}
+    </button>
+    <button class="btn-success btn">
+      {{#link-to 'about-us'}}
+        About
+      {{/link-to}}
+    </button>
+    <button class="btn-success btn">
+      {{#link-to 'contact'}}
+        Contact
+      {{/link-to}}
+    </button>
+  </nav>
+</div>
+<hr>
+<div class="jumbotron">
+  <header><h2>
+    QUESTIONS and ANSWERS
+  </h2></header>
+</div>
 {{outlet}}
+<hr>
+<footer>
+  <h5>Designed by Jaden Lesuk</h5>
+</footer>
