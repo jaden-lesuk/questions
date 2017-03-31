@@ -1,21 +1,21 @@
 <div class="jumbotron">
   <div class="container-fluid">
     <nav role="navigation" class="navbar">
+      {{#link-to 'index'}}
       <button class="btn-success btn">
-        {{#link-to 'index'}}
           Home
-        {{/link-to}}
       </button>
+      {{/link-to}}
+      {{#link-to 'about-us'}}
       <button class="btn-success btn">
-        {{#link-to 'about-us'}}
           About
-        {{/link-to}}
       </button>
+      {{/link-to}}
+      {{#link-to 'contact'}}
       <button class="btn-success btn">
-        {{#link-to 'contact'}}
           Contact
-        {{/link-to}}
       </button>
+      {{/link-to}}
     </nav>
   </div>
   <header><h2>
