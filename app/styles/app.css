@@ -1,0 +1,13 @@
+@font-face {
+  font-family: itachi;
+  src: url("../itachi.ttf");
+}
+
+header h2 {
+  font-family: itachi;
+  font-size: 70px;
+}
+
+.jumbotron {
+  padding: 5px;
+}
