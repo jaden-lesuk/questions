@@ -1,8 +1,8 @@
 <h2>QUESTIONS</h2>
+
 <ul>
   {{#each model as |post|}}
-     <li>
-       <h4>{{post.author}}</h4><br>{{post.content}}({{post.addition}})<br><br>
-     </li>
+    {{post-tile post=post deletePost="deletePost"}}
   {{/each}}
 </ul>
+{{new-post savePost2="savePost3"}}

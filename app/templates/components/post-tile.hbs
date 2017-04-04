@@ -1,1 +1,4 @@
-{{yield}}
+<li>
+  <h4>{{post.author}}:</h4>{{post.content}}({{post.addition}})<br><br>
+  <button class="btn btn-danger" {{action 'delete' post}}>Delete Post</button>
+</li>
