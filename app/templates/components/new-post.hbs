@@ -16,8 +16,10 @@
      <label for="addition">Addition</label><br>
      {{input value=addition id="addition"}}
    </div>
-
-   <button class="btn btn-warning btn-block" {{action 'savePost1'}}>Save</button>
+   <div class="btn-group">
+     <button type="button" class="btn btn-success btn-md" {{action 'savePost1'}}>Save</button>
+     <button type="button" class="btn btn-warning btn-md" {{action 'cancelNewPost'}}>Cancel</button>
+   </div>
  </form>
 </div>
 {{else}}
