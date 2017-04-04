@@ -5,24 +5,28 @@
     </h2></header>
     <nav role="navigation" class="navbar">
       {{#link-to 'index'}}
-      <button class="btn-primary btn">
+      <button class="btn-primary btn btn-lg">
           Home
       </button>
       {{/link-to}}
       {{#link-to 'about-us'}}
-      <button class="btn-primary btn">
+      <button class="btn-primary btn btn-lg">
           About
       </button>
       {{/link-to}}
       {{#link-to 'contact'}}
-      <button class="btn-primary btn">
+      <button class="btn-primary btn btn-lg">
           Contact
       </button>
       {{/link-to}}
     </nav>
   </div>
 </div>
-{{outlet}}
+
+<div class="container">
+  {{outlet}}
+</div>
+
 <hr>
 <footer>
   <h5>Designed by Jaden Lesuk</h5>
