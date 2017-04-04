@@ -1,1 +1,8 @@
-{{outlet}}
+<h2>QUESTIONS</h2>
+<ul>
+  {{#each model as |post|}}
+     <li>
+       <h4>{{post.author}}</h4><br>{{post.content}}({{post.addition}})<br><br>
+     </li>
+  {{/each}}
+</ul>
