@@ -1,5 +1,5 @@
 <li>
   <h4>{{post.author}}:</h4>{{post.content}}({{post.addition}})<br><br>
   {{update-post post=post  update="update"}}
-  <button class="btn btn-danger" {{action 'delete' post}}>Delete Post</button>
+  <button class="btn btn-danger" id="del-btn" {{action 'delete' post}}>Delete Post</button>
 </li>
