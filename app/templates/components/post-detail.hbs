@@ -1,4 +1,3 @@
-<h4 class="author-name text-danger">{{post.author}}</h4> {{post.content}}? ({{post.addition}})
-<br><br>
+<h4 class="author-name text-danger">{{post.author}}</h4> {{post.content}}? ({{post.addition}})<br><br>
 <button class="btn btn-danger" id="del-btn" {{action 'delete' post}}>Delete Post</button>
 {{update-post post=post  update="update"}}
