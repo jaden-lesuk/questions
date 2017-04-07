@@ -1,7 +1,29 @@
 {{#if updatePostForm}}
 
 <div class="well">
-  <h4>Update {{post.author}} post</h4>
+  <h2>Update {{post.author}} post?</h2>
+  <form>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author" placeholder=post.author}}
+    </div>
+    <div class="form-group">
+      <label for="content">Question</label>
+      {{input value=content id="content" placeholder=post.content}}
+    </div>
+    <div class="form-group">
+      <label for="addition">Specifications</label>
+      {{input value=addition id="addition" placeholder=post.addition}}
+    </div>
+  </form>
+  <div class="btn-group">
+    <button class="btn btn-success" {{action "update" post}}>Save</button>
+    <button class="btn btn-warning" {{action "cancel"}}>Cancel</button>
+  </div>
 </div>
+
+{{else}}
+
+<button class="btn btn-info" {{action "updatePostForm"}}>Edit</button>
 
 {{/if}}
