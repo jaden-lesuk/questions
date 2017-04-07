@@ -6,6 +6,17 @@
 header h2 {
   font-family: itachi;
   font-size: 80px;
+  text-align: center;
+}
+
+footer h5 {
+  font-family: itachi;
+  text-align: center;
+  font-size: 60px;
+}
+
+nav {
+  text-align: center;
 }
 
 .jumbotron {
@@ -19,4 +30,11 @@ header h2 {
 
 #del-btn {
   width: 100px;
+}
+
+.nav-btn {
+  width: 150px;
+  margin: 5px;
+  background-color: #333333;
+  border: 1px white solid;
 }

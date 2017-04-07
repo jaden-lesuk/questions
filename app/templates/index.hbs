@@ -1,10 +1,10 @@
  {{new-post savePost2="savePost3"}}
 
-<h2>QUESTIONS</h2>
+<h2>QUESTIONS :</h2>
 <ul>
   {{#each model as |post|}}
   <div class="well">
-    {{post-tile post=post deletePost="deletePost"}}
+    {{post-tile post=post  update="update" deletePost="deletePost"}}
   </div>
   {{/each}}
 </ul>

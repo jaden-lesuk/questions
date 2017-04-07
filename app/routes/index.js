@@ -14,6 +14,12 @@ export default Ember.Route.extend({
 			var newPost = this.store.createRecord('post', params);
 			newPost.save();
 			this.transitionTo('index');
+		},
+
+		update(post, params) {
+			debugger;
+			post.save();
+			this.transitionTo('index');
 		}
 	}
 });
