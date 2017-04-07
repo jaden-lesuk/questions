@@ -1,1 +1,4 @@
-{{yield}}
+{{post.author}} asked if {{post.content}}? bearing in mind that {{post.addition}}
+<br>
+<button class="btn btn-danger" id="del-btn" {{action 'delete' post}}>Delete Post</button>
+{{update-post post=post  update="update"}}
