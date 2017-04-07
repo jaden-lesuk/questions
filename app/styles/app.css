@@ -3,6 +3,11 @@
   src: url("../itachi.ttf");
 }
 
+@font-face {
+  font-family: lie;
+  src: url("../lie.otf");
+}
+
 header h2 {
   font-family: itachi;
   font-size: 80px;
@@ -39,4 +44,7 @@ nav {
   border: 1px white solid;
 }
 
-.author-name {}
+.author-name {
+  font-family: lie;
+  font-size: 40px;
+}
