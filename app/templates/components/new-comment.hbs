@@ -1,1 +1,25 @@
-{{yield}}
+{{#if addNewComment}}
+<h1>New Comment</h1>
+  <div class="well">
+    <form>
+      <div class="form-group">
+        <label for="author">Author :</label><br>
+        {{input value=author id="author"}}
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating :</label><br>
+        {{input value=rating id="rating"}}
+      </div>
+      <div class="form-group">
+        <label for="content">Content :</label><br>
+        {{input value=content id="content"}}
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-success" {{action 'saveComment'}}>Save</button>
+        <button class="btn btn-warning" {{action 'cancel'}}>Cancel</button>
+      </div>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-success" {{action 'commentFormShow'}}>New Answer</button>
+{{/if}}
