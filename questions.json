@@ -1,0 +1,19 @@
+{ "posts": [{
+  "author":"Jaden Lesuk",
+  "content": "Would it be easier to use Angular or Ember to build a social network",
+  "addition":"A.S.A.P plz"
+  }, {
+    "author":"Bry Onyoni",
+    "content": "Wouldn't static types just bring more bugs, looking at you typescript",
+    "addition":"Just asking"
+  }],
+  "answers": [{
+    "author": "Andrea",
+    "rating": 4,
+    "content": "The YAMAHA ERG 121 !!!"
+  }, {
+    "author": "Alex",
+    "rating": 9,
+    "content": "MANDAZI!!!"
+  }]
+}
