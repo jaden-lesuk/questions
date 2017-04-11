@@ -2,9 +2,14 @@
 
 <h2>QUESTIONS :</h2>
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
   <div class="well">
     {{post-tile post=post  update="update" deletePost="deletePost"}}
   </div>
+  {{/each}}
+</ul>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.rating}} - {{answer.content}} - by {{answer.author}}</li>
   {{/each}}
 </ul>
