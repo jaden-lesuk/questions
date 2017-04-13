@@ -20,6 +20,15 @@ export default Ember.Route.extend({
 
 			post.save();
 			this.transitionTo('index');
+		},
+		saveComment(params) {
+			var newComment = this.store.createRecord('review', params);
+			var post = params.post;
+			post.get('reviews').addObject(newComment);
+			newComment.save().then(function () {
+				return post.save();
+			});
+			this.transitionTo('post', post);
 		}
 	}
 });

@@ -4,7 +4,7 @@ export default Ember.Route.extend({
 	model() {
 		return Ember.RSVP.hash({
 			posts: this.store.findAll('post'),
-			answers: this.store.findAll('answer')
+			comments: this.store.findAll('comment')
 		});
 	},
 	actions: {
@@ -14,7 +14,7 @@ export default Ember.Route.extend({
 			this.transitionTo('index');
 		},
 		saveComment(params) {
-			var newComment = this.store.createRecord('answer', params);
+			var newComment = this.store.createRecord('comment', params);
 			newComment.save();
 			this.transitionTo('index');
 		}

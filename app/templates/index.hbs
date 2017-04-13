@@ -8,10 +8,3 @@
   </div>
   {{/each}}
 </ul>
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.rating}} - {{answer.content}} - by {{answer.author}}</li>
-  {{/each}}
-</ul>
-
-{{new-comment saveComment="saveComment"}}
